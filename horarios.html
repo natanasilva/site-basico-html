@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosso Horários | Minha Clinica</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <!-- Table style -->
+    <link
+      href="https://cdn.datatables.net/v/bs5/dt-1.13.4/b-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <!-- Aqui vai o seu menu -->
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="horarios.html">Horários</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="header">
+          <img
+            src="img/horarios.png"
+            height="100px"
+            width="100px"
+            alt="Logo do Site"
+          />
+          Nossos Horários
+          <!-- Aqui vai o seu header -->
+        </div>
+
+        <div class="content">
+          <h2>Confira os nossos horários de funcionamento</h2>
+          <table id="Horarios" class="table table-bordered table-hover">
+            <thead class="text-center bg-dark text-white">
+              <th>#</th>
+              <th>Serviços</th>
+              <th>Segunda a Sexta	</th>
+              <th>Sábados</th>
+              <th>Feriados</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1	</td>
+                <td>Clínica geral	</td>
+                <td>08h - 19h</td>
+                <td>08h - 14h</td>
+                <td>08h - 14h</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Psicologia</td>
+                <td>08h - 19h</td>
+                <td>08h - 14h</td>
+                <td>08h - 14h</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Pediatria</td>
+                <td>08h - 19h</td>
+                <td>08h - 14h</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Oftalmologia</td>
+                <td>08h - 19h</td>
+                <td>08h - 14h</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Aqui vai o seu conteúdo -->
+        </div>
+
+        <div class="footer">
+          <hr />
+          Site desenvolvido por
+          <a href="https://natanet.xyz" target="_blank">NataNet - Tecnologia</a
+          ><br />
+          2024 - Todos os direitos reservados
+          <!-- Aqui vai o seu rodapé -->
+        </div>
+      </div>
+    </div>
+    <!-- DataTables  & Plugins -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/b-2.3.6/b-html5-2.3.6/b-print-2.3.6/r-2.4.1/datatables.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#Horarios").DataTable({
+          language: {
+            sProcessing: "Processando...",
+            sLengthMenu: "Mostrar _MENU_ registros",
+            sZeroRecords: "Não foram encontrados resultados",
+            sEmptyTable: "Nenhum dado disponivel nesta tabela",
+            sInfo:
+              "Mostrando registros de _START_ a _END_ de um total de _TOTAL_ registros",
+            sInfoEmpty:
+              "Mostrando registros de 0 a 0 de un total de 0 registros",
+            sInfoFiltered: "(filtrado de um total de _MAX_ registros)",
+            sInfoPostFix: "",
+            sSearch: "Buscar:",
+            sUrl: "",
+            sInfoThousands: ",",
+            sLoadingRecords: "Carregando...",
+            oPaginate: {
+              sFirst: "Primeiro",
+              sLast: "Último",
+              sNext: "Seguinte",
+              sPrevious: "Anterior",
+            },
+
+            oAria: {
+              sSortAscending:
+                ": Ativar para ordenar a coluna em ordem ascendente",
+              sSortDescending:
+                ": Ativar para ordenar a coluna em ordem descendente",
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós | Minha Clinica</title>
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <!-- Aqui vai o seu menu -->
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre-nos.html">Sobre Nós</a></li>
+          <li><a href="horarios.html">Horários</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="header">
+          <img
+            src="img/sobre.png"
+            height="100px"
+            width="100px"
+            alt="Logo do Site"
+          />
+          Sobre Nós
+          <!-- Aqui vai o seu header -->
+        </div>
+
+        <div class="content">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).
+        </p>
+            <!-- Aqui vai o seu conteúdo -->
+          </p>
+          <input id="pass" type="password">
+          <input id="check" type="checkbox">
+        </div>
+
+        <div class="footer">
+          <hr />
+          Site desenvolvido por
+          <a href="https://natanet.xyz" target="_blank">NataNet - Tecnologia</a
+          ><br />
+          2024 - Todos os direitos reservados
+          <!-- Aqui vai o seu rodapé -->
+        </div>
+      </div>
+    </div>
+    <script>
+      check.onclick = tooglePassword;
+
+      function tooglePassword(){
+        if (check.checked) {
+          pass.type = "text"; 
+        }else{
+          pass.type = "password";
+        }
+      }
+    </script>
+  </body>
+</html>
